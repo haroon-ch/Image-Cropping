@@ -1,0 +1,158 @@
+<ion-header class="ion-no-border"  mode="ios">
+  <ion-toolbar mode="ios" class="py-3 px-2 shade">
+    <ion-title>
+      Jobs
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true" >
+
+  <ion-segment [(ngModel)]="tab" mode="md" >
+    <ion-segment-button value="New Jobs">
+      <ion-label>New Jobs</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="Active Jobs">
+      <ion-label>Active Jobs</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="Previous Jobs">
+      <ion-label>Previous Jobs</ion-label>
+    </ion-segment-button>
+  </ion-segment> 
+
+  <div *ngIf="this.tab == 'New Jobs'">
+
+    <ion-item class="a1" lines="none">
+      <ion-avatar slot="start">
+        <img class="img" src="./../../assets/shapes.svg" />
+      </ion-avatar>
+      <ion-label>
+        <h3>Elon Musk</h3>
+        <p class="text" (click)="see_details()">See Details...</p>
+    </ion-label>
+    <!-- <ion-button class="btn"><ion-icon name="notifications-outline"></ion-icon></ion-button> -->
+    <ion-row >
+      <ion-col>
+     <p class="text2">Accept</p>
+     <p class="text1">Decline</p>  
+      </ion-col>
+      <!-- <ion-col>
+        
+      </ion-col> -->
+    </ion-row>
+    </ion-item>
+
+     <ion-item class="a2" lines="none">
+      <ion-avatar slot="start">
+        <img class="img" src="./../../assets/shapes.svg" />
+      </ion-avatar>
+      <ion-label>
+        <h3>Elon Musk</h3>
+        <p class="text" (click)="see_details()">See Details...</p>
+    </ion-label>
+    <!-- <ion-button class="btn"><ion-icon name="notifications-outline"></ion-icon></ion-button> -->
+    <ion-row >
+      <ion-col>
+     <p class="text2">Accept</p>
+     <p class="text1">Decline</p>  
+      </ion-col>
+      <!-- <ion-col>
+        
+      </ion-col> -->
+    </ion-row>
+    </ion-item>
+
+  </div>
+
+  <div *ngIf="this.tab == 'Active Jobs'">
+
+    <ion-item class="a1" lines="none">
+      <ion-avatar slot="start">
+        <img class="img" src="./../../assets/shapes.svg" />
+      </ion-avatar>
+      <ion-label>
+        <h3>Elon Musk</h3>
+        <p class="text" (click)="see_details()">See Details...</p>
+    </ion-label>
+    <!-- <ion-button class="btn"><ion-icon name="notifications-outline"></ion-icon></ion-button> -->
+    <ion-row >
+      <ion-col>
+     <p class="text2">12:00 PM</p>
+     <p class="text1">Time Left</p>  
+      </ion-col>
+      <!-- <ion-col>
+        
+      </ion-col> -->
+    </ion-row>
+    </ion-item>
+
+    <ion-item class="a2" lines="none">
+      <ion-avatar slot="start">
+        <img class="img" src="./../../assets/shapes.svg" />
+      </ion-avatar>
+      <ion-label>
+        <h3>Elon Musk</h3>
+        <p class="text" (click)="see_details()">See Details...</p>
+    </ion-label>
+    <!-- <ion-button class="btn"><ion-icon name="notifications-outline"></ion-icon></ion-button> -->
+    <ion-row >
+      <ion-col>
+     <p class="text2">2:00 PM</p>
+     <p class="text1">Time Left</p>  
+      </ion-col>
+      <!-- <ion-col>
+        
+      </ion-col> -->
+    </ion-row>
+    </ion-item>
+
+  </div>
+
+  <div *ngIf="this.tab == 'Previous Jobs'">
+    
+    <ion-item class="a1" lines="none">
+      <ion-avatar slot="start">
+        <img class="img" src="./../../assets/shapes.svg" />
+      </ion-avatar>
+      <ion-label>
+        <h3>Elon Musk</h3>
+        <p class="text" (click)="see_details()">See Details...</p>
+    </ion-label>
+    <!-- <ion-button class="btn"><ion-icon name="notifications-outline"></ion-icon></ion-button> -->
+    <ion-row >
+      <ion-col>
+     <p class="completed">Completed</p>
+     <!-- <p class="text1">Decline</p>   -->
+      </ion-col>
+      <!-- <ion-col>
+        
+      </ion-col> -->
+    </ion-row>
+    </ion-item>
+
+    <ion-item class="a2 previous" lines="none">
+      <ion-avatar slot="start">
+        <img class="img" src="./../../assets/shapes.svg" />
+      </ion-avatar>
+      <ion-label>
+        <h3>Elon Musk</h3>
+        <p class="text" (click)="see_details()">See Details...</p>
+    </ion-label>
+    <!-- <ion-button class="btn"><ion-icon name="notifications-outline"></ion-icon></ion-button> -->
+    <ion-row >
+      <ion-col>
+        <p class=" completed">Completed</p>
+     <!-- <p class="text1">Decline</p>   -->
+      </ion-col>
+      <!-- <ion-col>
+        
+      </ion-col> -->
+    </ion-row>
+    </ion-item>
+
+  </div>
+
+
+
+</ion-content>

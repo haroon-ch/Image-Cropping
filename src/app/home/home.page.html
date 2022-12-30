@@ -1,0 +1,155 @@
+<!-- <ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Image Crop
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+ 
+  <ion-buttons>
+    <ion-button Slot="end" size="small" (click)="cropImage()" *ngIf="myImage">
+      Done
+     </ion-button>
+  </ion-buttons>
+
+  <ion-button (click)="selectImage()" expand="block" *ngIf="!myImage">
+    Choose Image
+  </ion-button>
+
+  <ion-row *ngIf="myImage">
+    <ion-col size="2.7">
+      <ion-button fill="clear" (click)="rotate()" > 
+        Rotate
+      </ion-button>
+    </ion-col>
+    <ion-col size="2.7">
+      <ion-button fill="clear" (click)="flipHorizental()"> 
+        Flip X
+      </ion-button>
+    </ion-col>
+    <ion-col size="2.7">
+      <ion-button fill="clear" (click)="flipVertical()" > 
+        Flip Y
+      </ion-button>
+    </ion-col>
+    <ion-col  size="2.7">
+      <ion-button fill="clear" (click)="discardChanges()"> 
+        Discard
+      </ion-button>
+    </ion-col>
+  </ion-row>
+
+<image-cropper
+  #cropper
+  [imageBase64]="myImage"
+    [maintainAspectRatio]="true"
+    [aspectRatio]="1 / 1"
+    format="png"
+    (imageLoaded)="imageLoaded()"
+    (loadImageFailed)="loadImageFailed()"
+    [transform] = "transform"
+    [hideResizeSquares]="isMobile"
+></image-cropper>
+
+<img [src]="croppedImage" *ngIf="croppedImage" />
+
+</ion-content>
+ -->
+<!-- <ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Plumber
+    </ion-title>
+  </ion-toolbar>
+</ion-header> -->
+<ion-content [fullscreen]="true" mode="ios">
+  <svg class="s2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,256L48,250.7C96,245,192,235,288,202.7C384,171,480,117,576,112C672,107,768,149,864,170.7C960,192,1056,192,1152,165.3C1248,139,1344,85,1392,58.7L1440,32L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+
+  <ion-item class="a1" lines="none">
+    <ion-avatar slot="start">
+      <img class="img" src="./../../assets/shapes.svg" />
+    </ion-avatar>
+    <ion-label>
+      <h3>Elon Musk</h3>
+    <p><ion-icon name="location-outline"></ion-icon> New York</p>
+  </ion-label>
+  <ion-button class="btn"><ion-icon name="notifications-outline"></ion-icon></ion-button>
+  </ion-item>
+
+  <ion-card class="c1">
+    <ion-card-title class="t1">Welcome to our app</ion-card-title>
+  </ion-card>
+
+  <ion-row>
+
+    <ion-col size-xs="6" size-md="3">
+      <ion-card class="c2" (click)="jobs()">
+        <ion-icon name="construct"></ion-icon>
+        <ion-card-title class="t2"> New Jobs</ion-card-title>
+      </ion-card>
+    </ion-col>
+
+    <ion-col size-xs="6" size-md="3">
+      <ion-card class="c2" (click)="jobs()">
+        <ion-icon name="build"></ion-icon>
+        <ion-card-title class="t2">Previous Jobs</ion-card-title>
+      </ion-card>
+    </ion-col>
+
+    <ion-col size-xs="6" size-md="3">
+      <ion-card class="c2" (click)="jobs()">
+        <ion-icon name="hammer"></ion-icon>
+        <ion-card-title class="t2">Active Jobs</ion-card-title>
+      </ion-card>
+    </ion-col>
+
+    <ion-col size-xs="6" size-md="3">
+      <ion-card class="c2">
+        <ion-icon name="person"></ion-icon>
+        <ion-card-title class="t2">Profile</ion-card-title>
+      </ion-card>
+    </ion-col>
+
+  </ion-row>
+  
+<!-- 
+  <ion-card class="c1">
+    <ion-card-title class="t1">Our Best Workers</ion-card-title>
+  </ion-card>
+
+
+  <ion-card class="c4">
+    <img *ngFor="let d of data" src="{{d.path}}" class="img1">
+
+  </ion-card>
+
+  <ion-card class="c1">
+    <ion-card-title class="t1">Explore</ion-card-title>
+  </ion-card>
+
+-->
+  <!-- <ion-row>
+    <ion-col size-xs="6" size-md="4" *ngFor="let d of data1">
+      <ion-card class="c5" (click)="profile()">
+        <img src="{{d.path}}"/>
+        <ion-card-header>
+          <ion-item class="a1" lines="none">
+            <ion-label class="l1">{{d.name}}</ion-label>
+          </ion-item>
+          <ion-card-subtitle class="st3"><ion-icon name="location-outline"></ion-icon> {{d.city}}</ion-card-subtitle>
+         
+        </ion-card-header>
+        <ion-item class="a2" lines="none">
+          <ion-label><ion-card-subtitle class="st4">${{d.price}}/hr</ion-card-subtitle></ion-label>
+          <ion-card-subtitle class="st5"><ion-icon class="icn1" name="star"></ion-icon> {{d.rate}}</ion-card-subtitle>
+          
+
+         </ion-item>
+      </ion-card>
+    </ion-col>
+  </ion-row> -->
+  <svg class="s1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,256L48,250.7C96,245,192,235,288,202.7C384,171,480,117,576,112C672,107,768,149,864,170.7C960,192,1056,192,1152,165.3C1248,139,1344,85,1392,58.7L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg> 
+
+</ion-content>

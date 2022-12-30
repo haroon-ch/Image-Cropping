@@ -1,0 +1,7 @@
+{
+  "name": "CropImage",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
